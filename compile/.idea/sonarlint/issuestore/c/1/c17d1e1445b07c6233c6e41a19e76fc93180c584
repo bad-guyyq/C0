@@ -1,0 +1,9 @@
+
+m	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½
+[	java:S125"<This block of commented-out lines of code should be removed.(½úœÕøÿÿÿÿ8Ñ‡Ñ€ñ.
+A
+java:S1168"&Return an empty array instead of null.(¥¹ï8õƒ°¶ğ.
+U
+java:S1191"5Use classes from the Java API instead of Sun classes.(´»ñ¥ûÿÿÿÿ8£‹Ä€ñ.
+R
+java:S1128"2Remove this unused import 'com.sun.jdi.ByteValue'.(´»ñ¥ûÿÿÿÿ8ĞğÄ€ñ.

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6661a1c7-bd93-4acd-b184-451be06dfcd9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/1/8/1832b328c12bcf4b15b4c8722c220cf86cc9d206" beforeDir="false" afterPath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/1/8/1832b328c12bcf4b15b4c8722c220cf86cc9d206" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/2/d/2d6bac3db3f8ae3080d416ae7e04c581fb572a85" beforeDir="false" afterPath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/2/d/2d6bac3db3f8ae3080d416ae7e04c581fb572a85" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/3/5/35e88f90da10292210bd7e269a815acb25e59d2c" beforeDir="false" afterPath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/3/5/35e88f90da10292210bd7e269a815acb25e59d2c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/c/1/c17d1e1445b07c6233c6e41a19e76fc93180c584" beforeDir="false" afterPath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/c/1/c17d1e1445b07c6233c6e41a19e76fc93180c584" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/f/4/f466c743ee61236ca163036066d0e25250167554" beforeDir="false" afterPath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/f/4/f466c743ee61236ca163036066d0e25250167554" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/compile/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/src/main/java/miniplc0java/analyser/Analyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/compile/src/main/java/miniplc0java/analyser/Analyser.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/compile" />
+  </component>
+  <component name="JupyterTrust" id="a6dc7e47-8c4a-4fef-be64-fab5dd73a336" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:\IDEA\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1m0P2JDeUj8kZq2dBFu9MSe11PQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6661a1c7-bd93-4acd-b184-451be06dfcd9" name="Default Changelist" comment="" />
+      <created>1608627329258</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608627329258</updated>
+      <workItem from="1608627332876" duration="43000" />
+      <workItem from="1608627485114" duration="2532000" />
+      <workItem from="1608642417785" duration="34000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

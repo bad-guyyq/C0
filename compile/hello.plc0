@@ -1,0 +1,8 @@
+let i: int = 0;
+let j: int;
+fn main() -> int {
+    let i: int = 0;
+    let j: int;
+    j=i;
+    return 0;
+}
