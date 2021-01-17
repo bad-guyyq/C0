@@ -1,13 +1,11 @@
 package miniplc0java;
 
-import static org.junit.Assert.assertEquals;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Test;
 
 import miniplc0java.instruction.Instruction;
 import miniplc0java.instruction.Operation;

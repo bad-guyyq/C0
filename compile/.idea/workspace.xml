@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -22,48 +19,72 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="928a3dcc-1a14-42e3-8267-84d95bcf7aa2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/judger.toml" afterDir="false" />
+    <list default="true" id="e648ede6-5c5c-4f02-a08d-ca8a121a738b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/7/9/7978189fba310699225bb8586af3a5973d3cab1b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/b/a/badc5bb27d526d71e8e348cd00d0029259d510f0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/d/1/d1762af9b52e1398db3956a448fb4fe3f97177b7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/d/d/dd24769e2f25193d640bb87f645769b415ec7069" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/042b0310dffaf0ac227e1dc009c7381fbad87f2a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/086f1808ac420c7a4da87b7ce3170389103b131a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/e/0ec88ecd8bf06163956b2a3057343d1baf55a753" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/14ba8e6e610952904ce037d9d56e890c5d6abeeb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/8/1832b328c12bcf4b15b4c8722c220cf86cc9d206" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/19f5d6d65a96067c1b4f499650ba1624d6af50ca" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1e36c8db97ab319d07447d655386bebf44bf6ac3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/d/2d6bac3db3f8ae3080d416ae7e04c581fb572a85" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/35e88f90da10292210bd7e269a815acb25e59d2c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/58cde54ba152438b20b2afa685f9c413eb212e33" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5f223aed19086c6ef99a31b7927b1ee046c991c3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/d/8d7047a1d698c81e9a9a3adb326ca3a777979dfe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/d/8df871d57e691acbe09d8bb2bef3b456475f4683" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9a890da2b57beed2172cf8d1b514e053dd7e922e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b6b5b0dfbc27ece622e929d3c064058f0f910b59" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/7/b75567bf6223a2051fb74d0b71bea18fcecbab46" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c17d1e1445b07c6233c6e41a19e76fc93180c584" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/a/ca95d1c0ea8ceacb4331f4ca92ee59cb4dce69a7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e3d9a9cea37136e76afb5cfb5197b244cf3b2a13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e44d0c3641eef9572561e5956ca7ddeae51b5bf2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/4/f466c743ee61236ca163036066d0e25250167554" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f969e3e7fcd01db6c6bf2abfe2a3e3e07011c29e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_l.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_ll.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_llO0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/miniplc0java/analyser/Analyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miniplc0java/analyser/Analyser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miniplc0java/tokenizer/Temp_test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miniplc0java/tokenizer/Tokenizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miniplc0java/tokenizer/Tokenizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/miniplc0java/AnalyserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/miniplc0java/AnalyserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/miniplc0java/MiniVmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/miniplc0java/MiniVmTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/miniplc0java/TokenizerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/miniplc0java/TokenizerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../navm-windows-amd64.exe" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$">
-      <ProjectState />
-    </projectState>
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand />
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="JupyterTrust" id="a6dc7e47-8c4a-4fef-be64-fab5dd73a336" />
-  <component name="ProjectId" id="1jVZg3svzFVhscudQ4tw33Bo2Kp" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:\IDEA\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1nCt54EHZg6gbtFuUA5JfUeir7O" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -72,48 +93,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.AnalyserTest">
+  <component name="RunManager">
     <configuration name="AnalyserTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="miniplc0java.AnalyserTest" />
-      <module name="miniplc0java.test" />
+      <module name="test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="miniplc0java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="miniplc0java.App" />
-      <module name="miniplc0java.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="miniplc0java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Temp_test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="miniplc0java.tokenizer.Temp_test" />
-      <module name="miniplc0java.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="miniplc0java.tokenizer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,219 +121,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="DjangoTestsConfigurationType">
-      <module name="miniplc0java" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="miniplc0java" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="miniplc0java" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <module name="miniplc0java" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
-      <module name="miniplc0java" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="miniplc0java" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Python.FlaskServer">
-      <module name="miniplc0java" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="miniplc0java" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="miniplc0java" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <module name="miniplc0java" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.AnalyserTest" />
-        <item itemvalue="Application.App" />
-        <item itemvalue="Application.Temp_test" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="928a3dcc-1a14-42e3-8267-84d95bcf7aa2" name="Default Changelist" comment="" />
-      <created>1603891326754</created>
+      <changelist id="e648ede6-5c5c-4f02-a08d-ca8a121a738b" name="Default Changelist" comment="" />
+      <created>1610905715726</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1603891326754</updated>
-      <workItem from="1603891327863" duration="3044000" />
-      <workItem from="1603941697522" duration="1246000" />
-      <workItem from="1606644445107" duration="708000" />
-      <workItem from="1606646726458" duration="14441000" />
-      <workItem from="1607391860629" duration="20952000" />
-      <workItem from="1608339108170" duration="24150000" />
-      <workItem from="1608430671635" duration="35972000" />
-      <workItem from="1608514736715" duration="26748000" />
-      <workItem from="1608627394879" duration="76000" />
-      <workItem from="1608642208823" duration="180000" />
-      <workItem from="1608642473207" duration="21000" />
-      <workItem from="1608642509346" duration="20380000" />
-      <workItem from="1608668791896" duration="586000" />
-      <workItem from="1608713425377" duration="10680000" />
-      <workItem from="1608793719981" duration="10146000" />
-      <workItem from="1608972849729" duration="8039000" />
-      <workItem from="1609465714237" duration="1530000" />
-      <workItem from="1609470763758" duration="11264000" />
-      <workItem from="1610114668045" duration="286000" />
-      <workItem from="1610635315892" duration="2714000" />
-      <workItem from="1610719043512" duration="8268000" />
-      <workItem from="1610785708109" duration="10308000" />
-      <workItem from="1610855849706" duration="16829000" />
+      <updated>1610905715726</updated>
+      <workItem from="1610905716776" duration="5759000" />
     </task>
     <servers />
   </component>
@@ -361,126 +152,124 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="674" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610887945793">
+    <state x="401" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610910663258">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="674" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1610887945793" />
-    <state x="788" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608446812917">
+    <state x="401" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1610910663258" />
+    <state width="536" height="438" key="DebuggerActiveHint" timestamp="1610908427409">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="788" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1608446812917" />
-    <state x="849" y="307" key="FileChooserDialogImpl" timestamp="1610114951976">
+    <state width="536" height="438" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1610908427409" />
+    <state x="544" y="153" key="FileChooserDialogImpl" timestamp="1610911194293">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="849" y="307" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610114951976" />
-    <state width="1136" height="2" key="GridCell.Tab.0.bottom" timestamp="1610889733217">
+    <state x="544" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610911194293" />
+    <state width="310" height="689" key="GridCell.Tab.-1.bottom" timestamp="1610910670796">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1136" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610889733217" />
-    <state width="1136" height="2" key="GridCell.Tab.0.center" timestamp="1610889733217">
+    <state width="310" height="689" key="GridCell.Tab.-1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610910670796" />
+    <state width="310" height="689" key="GridCell.Tab.-1.center" timestamp="1610910670796">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1136" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610889733217" />
-    <state width="1136" height="2" key="GridCell.Tab.0.left" timestamp="1610889733217">
+    <state width="310" height="689" key="GridCell.Tab.-1.center/0.0.1536.824@0.0.1536.824" timestamp="1610910670796" />
+    <state width="310" height="689" key="GridCell.Tab.-1.left" timestamp="1610910670796">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1136" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610889733217" />
-    <state width="1136" height="2" key="GridCell.Tab.0.right" timestamp="1610889733217">
+    <state width="310" height="689" key="GridCell.Tab.-1.left/0.0.1536.824@0.0.1536.824" timestamp="1610910670796" />
+    <state width="310" height="689" key="GridCell.Tab.-1.right" timestamp="1610910670796">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1136" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610889733217" />
-    <state width="171" height="659" key="GridCell.Tab.1.bottom" timestamp="1610889733205">
+    <state width="310" height="689" key="GridCell.Tab.-1.right/0.0.1536.824@0.0.1536.824" timestamp="1610910670796" />
+    <state width="1132" height="144" key="GridCell.Tab.0.bottom" timestamp="1610911246375">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="171" height="659" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610889733205" />
-    <state width="171" height="659" key="GridCell.Tab.1.center" timestamp="1610889733204">
+    <state width="1132" height="144" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610911246375" />
+    <state width="1132" height="144" key="GridCell.Tab.0.center" timestamp="1610911246365">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="171" height="659" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1610889733204" />
-    <state width="171" height="659" key="GridCell.Tab.1.left" timestamp="1610889733204">
+    <state width="1132" height="144" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610911246365" />
+    <state width="1132" height="144" key="GridCell.Tab.0.left" timestamp="1610911246365">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="171" height="659" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1610889733204" />
-    <state width="171" height="659" key="GridCell.Tab.1.right" timestamp="1610889733205">
+    <state width="1132" height="144" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610911246365" />
+    <state width="1132" height="144" key="GridCell.Tab.0.right" timestamp="1610911246375">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="171" height="659" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1610889733205" />
-    <state x="498" y="0" key="SettingsEditor" timestamp="1608642685362">
+    <state width="1132" height="144" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610911246375" />
+    <state width="310" height="689" key="GridCell.Tab.1.bottom" timestamp="1610910831042">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="498" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608642685362" />
-    <state x="885" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608557290332">
+    <state width="310" height="689" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610910831042" />
+    <state width="310" height="689" key="GridCell.Tab.1.center" timestamp="1610910831042">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="885" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1608557290332" />
-    <state x="586" y="153" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1608983644128">
+    <state width="310" height="689" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1610910831042" />
+    <state width="310" height="689" key="GridCell.Tab.1.left" timestamp="1610910831042">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="586" y="153" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1608983644128" />
-    <state x="-2" y="21" width="350" height="631" key="dock-window-1" timestamp="1609489648245">
+    <state width="310" height="689" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1610910831042" />
+    <state width="310" height="689" key="GridCell.Tab.1.right" timestamp="1610910831042">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="-2" y="21" width="350" height="631" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1609489648245" />
-    <state x="865" y="350" key="extract.method.dialog" timestamp="1610722579574">
+    <state width="310" height="689" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1610910831042" />
+    <state width="310" height="689" key="GridCell.Tab.2.bottom" timestamp="1610910825502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="865" y="350" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1610722579574" />
-    <state x="249" y="230" width="600" height="594" key="find.popup" timestamp="1608359789745">
+    <state width="310" height="689" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610910825502" />
+    <state width="310" height="689" key="GridCell.Tab.2.center" timestamp="1610910825502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="230" width="600" height="594" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1608359789745" />
-    <state x="51" y="0" key="new project wizard" timestamp="1610114956064">
+    <state width="310" height="689" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1610910825502" />
+    <state width="310" height="689" key="GridCell.Tab.2.left" timestamp="1610910825502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="51" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1610114956064" />
-    <state x="720" y="171" key="refactoring.ChangeSignatureDialog" timestamp="1608454116159">
+    <state width="310" height="689" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1610910825502" />
+    <state width="310" height="689" key="GridCell.Tab.2.right" timestamp="1610910825502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="720" y="171" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1608454116159" />
-    <state x="690" y="189" key="run.anything.popup" timestamp="1610882482842">
+    <state width="310" height="689" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1610910825502" />
+    <state x="95" y="297" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1610910491001">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="690" y="189" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1610882482842" />
-    <state x="342" y="386" key="scopes" timestamp="1608359783123">
+    <state x="95" y="297" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1610910491001" />
+    <state x="251" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1610909886634">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="342" y="386" key="scopes/0.0.1536.824@0.0.1536.824" timestamp="1608359783123" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1609472115107">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1609472115107" />
+    <state x="251" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1610909886634" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/miniplc0java/analyser/Analyser.java</url>
-          <line>323</line>
-          <option name="timeStamp" value="39" />
+          <line>165</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/miniplc0java/AnalyserTest.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="46" />
+          <url>jar://$PROJECT_DIR$/build/libs/miniplc0java.jar!/miniplc0java/analyser/Analyser.class</url>
+          <line>654</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/miniplc0java/instruction/Instruction.java</url>
-          <line>323</line>
-          <option name="timeStamp" value="49" />
+          <url>file://$PROJECT_DIR$/src/main/java/miniplc0java/analyser/Analyser.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/miniplc0java/analyser/Analyser.java</url>
+          <line>688</line>
+          <properties class="miniplc0java.analyser.Analyser" method="count_expr_Factor">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <pin-to-top-manager>
-      <pinned-members>
-        <PinnedItemInfo parentTag="miniplc0java.instruction.Function" memberName="Body" />
-      </pinned-members>
-    </pin-to-top-manager>
     <watches-manager>
-      <configuration name="Remote">
-        <watch expression="nowFunc.funcSymbolStack" language="JAVA" />
+      <configuration name="Application">
+        <watch expression="stdlibFunc" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

@@ -337,8 +337,8 @@ public class Tokenizer {
             ans=peek;
         }
         if(it.peekChar()=='\''){//不检查越界&&temp<=1844407370955]
-            peek=it.nextChar();
-            return new Token(TokenType.CHAR_LITERAL, ans, pre, it.currentPos());
+            it.nextChar();
+            return new Token(TokenType.CHAR_LITERAL, (int)ans, pre, it.currentPos());
         }
         throw new Error("Not implemented");
     }

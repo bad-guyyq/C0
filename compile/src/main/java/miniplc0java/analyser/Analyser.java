@@ -65,6 +65,8 @@ public final class Analyser {
         analyseGlobal();// 加入符号表,判读全局
         SymbolEntry func=addSymbol("_start", true,false, true,false, new Pos(0,0));
         func.setType("void");
+        //还不确定是不是放这
+        addInstruction(new Instruction(Operation.popn,1));
         analyseFunction();
         // 'end'
         expect(TokenType.EOF);
@@ -400,9 +402,10 @@ public final class Analyser {
     private void stdlib(Token nameToken)throws CompileError{
         String funcName = (String) nameToken.getValue();
         SymbolEntry nameSymbol=foundSymbolByName(funcName);
+        //每次用到的时候都加了;
+        GlobalSymbol.add(funcName);
         //先看全局符号表里有没有加上该标准函数
         if(symbolGlobalTable.get(funcName)==null){//没有则加入全局中
-            GlobalSymbol.add(funcName);
             stdlibFunc.add(add_stdlib(funcName));
         }
         //SymbolEntry funcSymbol=this.symbolGlobalTable.get(funcName);
@@ -415,6 +418,7 @@ public final class Analyser {
         temp.setGlobal(true);
         switch (stdlibName){
             case "getint" :
+            case "getchar" :
                 temp.setType("int");
                 retFunc.setFunction(stdlibName,0,1);
                 break;
@@ -422,20 +426,13 @@ public final class Analyser {
                 temp.setType("double");
                 retFunc.setFunction(stdlibName,0,1);
                 break;
-            case "getchar" :
-                temp.setType("char");
-                retFunc.setFunction(stdlibName,0,1);
-                break;
             case "putint" :
+            case "putchar" :
                 retFunc.setFunction(stdlibName,1,0);
                 retFunc.paramType.add(TokenType.UINT_LITERAL);
                 break;
             case "putdouble" :
-                retFunc.setFunction(stdlibName,0,1);
-                break;
-            case "putchar" :
                 retFunc.setFunction(stdlibName,1,0);
-                retFunc.paramType.add(TokenType.CHAR_LITERAL);
                 break;
             case "putstr" :
                 retFunc.setFunction(stdlibName,1,0);
@@ -456,7 +453,7 @@ public final class Analyser {
         SymbolEntry stdlibSymbol=foundSymbolByName(name);
         int funcOff=foundStdlibOffByName(name);
         Function callFunc=stdlibFunc.get(funcOff);
-        //设置返回值栈
+        //设置返回值栈,函数实现不管所以返回值不用管类型；
         if(callFunc.retSlots!=0){
             addInstruction(new Instruction(Operation.stackalloc,callFunc.retSlots));
         }
@@ -467,13 +464,15 @@ public final class Analyser {
     }
     private void call_stdlib_list(int funcOff)throws CompileError{
         /**call_param_list -> expr (',' expr)*/
+        Function stdlib=stdlibFunc.get(funcOff);
         expect(TokenType.L_PAREN);
-        if(stdlibFunc.get(funcOff).paramSlots==1){
-            TokenType paramType=count_expr(null);
+        if(stdlib.paramSlots==1){
+            TokenType paramType=count_expr(null);//这里是参数入栈，只可能是int或者double
             //参数类型要一致,char参数可能为数字形式
-            if (stdlibFunc.get(funcOff).paramType.get(0).equals(TokenType.CHAR_LITERAL) && paramType.equals(TokenType.UINT_LITERAL)) {
-                ;
-            }else if(!stdlibFunc.get(funcOff).paramType.get(0).equals(paramType)){
+            if(stdlib.fucName.equals("putstr")&&paramType.equals(TokenType.STRING_LITERAL)){
+                //此时全局符号里最大的就是
+                addInstruction(new Instruction(Operation.push,GlobalSymbol.size()-1));
+            }else if (!paramType.equals(stdlib.paramType.get(0))) {
                 throw new Error("paramTypeWrong");
             }
         }
@@ -707,7 +706,7 @@ public final class Analyser {
             //什么都不做
             next();
         }
-        // 是标识符,函数或者变量，由于要判断
+        // 是标识符,函数或者变量，由于要判断,再加上字符，浮点数与字符串
         // 加载标识符的值,返回标识符符号
         if (nameToken.getTokenType()==TokenType.IDENT) {
             String name=(String)nameToken.getValue();
@@ -741,6 +740,14 @@ public final class Analyser {
             Double value = (Double)nameToken.getValue();
             addInstruction(new Instruction(Operation.push, value));
             type=TokenType.DOUBLE_LITERAL;
+        } else if(nameToken.getTokenType()==TokenType.STRING_LITERAL){
+            String value = (String)nameToken.getValue();
+            GlobalSymbol.add(value);
+            type=TokenType.STRING_LITERAL;
+        } else if(nameToken.getTokenType()==TokenType.CHAR_LITERAL){//char在Token的时候用char 分析后转化为int
+            int value =(int)nameToken.getValue();
+            addInstruction(new Instruction(Operation.push, value));
+            type=TokenType.UINT_LITERAL;
         } else if (nameToken.getTokenType()==TokenType.L_PAREN) {// 是(表达式)
             // 调用相应的处理函数
             type=count_expr(null);

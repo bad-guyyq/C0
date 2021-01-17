@@ -1,15 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6661a1c7-bd93-4acd-b184-451be06dfcd9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/1/8/1832b328c12bcf4b15b4c8722c220cf86cc9d206" beforeDir="false" afterPath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/1/8/1832b328c12bcf4b15b4c8722c220cf86cc9d206" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/2/d/2d6bac3db3f8ae3080d416ae7e04c581fb572a85" beforeDir="false" afterPath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/2/d/2d6bac3db3f8ae3080d416ae7e04c581fb572a85" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/3/5/35e88f90da10292210bd7e269a815acb25e59d2c" beforeDir="false" afterPath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/3/5/35e88f90da10292210bd7e269a815acb25e59d2c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/c/1/c17d1e1445b07c6233c6e41a19e76fc93180c584" beforeDir="false" afterPath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/c/1/c17d1e1445b07c6233c6e41a19e76fc93180c584" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/f/4/f466c743ee61236ca163036066d0e25250167554" beforeDir="false" afterPath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/f/4/f466c743ee61236ca163036066d0e25250167554" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="e2fe2a48-845b-4d72-847a-f062c49e1f7f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/7978189fba310699225bb8586af3a5973d3cab1b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/badc5bb27d526d71e8e348cd00d0029259d510f0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/1/d1762af9b52e1398db3956a448fb4fe3f97177b7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/dd24769e2f25193d640bb87f645769b415ec7069" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/compile/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/0/4/042b0310dffaf0ac227e1dc009c7381fbad87f2a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/0/8/086f1808ac420c7a4da87b7ce3170389103b131a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/0/e/0ec88ecd8bf06163956b2a3057343d1baf55a753" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/1/4/14ba8e6e610952904ce037d9d56e890c5d6abeeb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/1/8/1832b328c12bcf4b15b4c8722c220cf86cc9d206" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/1/9/19f5d6d65a96067c1b4f499650ba1624d6af50ca" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/1/e/1e36c8db97ab319d07447d655386bebf44bf6ac3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/2/d/2d6bac3db3f8ae3080d416ae7e04c581fb572a85" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/3/5/35e88f90da10292210bd7e269a815acb25e59d2c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/5/8/58cde54ba152438b20b2afa685f9c413eb212e33" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/5/f/5f223aed19086c6ef99a31b7927b1ee046c991c3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/8/d/8d7047a1d698c81e9a9a3adb326ca3a777979dfe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/8/d/8df871d57e691acbe09d8bb2bef3b456475f4683" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/9/a/9a890da2b57beed2172cf8d1b514e053dd7e922e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/b/6/b6b5b0dfbc27ece622e929d3c064058f0f910b59" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/b/7/b75567bf6223a2051fb74d0b71bea18fcecbab46" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/c/1/c17d1e1445b07c6233c6e41a19e76fc93180c584" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/c/a/ca95d1c0ea8ceacb4331f4ca92ee59cb4dce69a7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/e/3/e3d9a9cea37136e76afb5cfb5197b244cf3b2a13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/e/4/e44d0c3641eef9572561e5956ca7ddeae51b5bf2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/f/4/f466c743ee61236ca163036066d0e25250167554" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/f/9/f969e3e7fcd01db6c6bf2abfe2a3e3e07011c29e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/compile/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/compile/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/compile/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/compile/src/main/java/miniplc0java/analyser/Analyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/compile/src/main/java/miniplc0java/analyser/Analyser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/src/main/java/miniplc0java/tokenizer/Temp_test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile/src/main/java/miniplc0java/tokenizer/Tokenizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/compile/src/main/java/miniplc0java/tokenizer/Tokenizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navm-windows-amd64.exe" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +70,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/compile" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="a6dc7e47-8c4a-4fef-be64-fab5dd73a336" />
   <component name="MavenImportPreferences">
@@ -27,32 +80,66 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1m0P2JDeUj8kZq2dBFu9MSe11PQ" />
+  <component name="ProjectId" id="1nCseVnTnVoQDi5h9FBd4K2r4ho" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6661a1c7-bd93-4acd-b184-451be06dfcd9" name="Default Changelist" comment="" />
-      <created>1608627329258</created>
+      <changelist id="e2fe2a48-845b-4d72-847a-f062c49e1f7f" name="Default Changelist" comment="" />
+      <created>1610905511947</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1608627329258</updated>
-      <workItem from="1608627332876" duration="43000" />
-      <workItem from="1608627485114" duration="2532000" />
-      <workItem from="1608642417785" duration="34000" />
+      <updated>1610905511947</updated>
+      <workItem from="1610905513757" duration="197000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="681" y="170" key="FileChooserDialogImpl" timestamp="1610905667810">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="681" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610905667810" />
+    <state x="540" y="119" key="NewModule_or_Project.wizard" timestamp="1610905713366">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="540" y="119" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1610905713366" />
   </component>
 </project>

@@ -7,12 +7,11 @@ import miniplc0java.tokenizer.Tokenizer;
 import net.sourceforge.argparse4j.ArgumentParsers;
 import net.sourceforge.argparse4j.impl.Arguments;
 import net.sourceforge.argparse4j.inf.ArgumentParser;
-import org.junit.Test;
 
 import java.io.*;
 import java.util.Scanner;
 
-import static org.junit.Assert.*;
+
 
 public class AnalyserTest {
     public static void main(String[] args) throws CompileError {

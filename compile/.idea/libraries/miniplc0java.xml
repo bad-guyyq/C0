@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="miniplc0java">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/libs/miniplc0java.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
