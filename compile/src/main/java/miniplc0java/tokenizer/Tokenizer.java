@@ -47,8 +47,10 @@ public class Tokenizer {
             if(it.peekChar()=='\\'){
                 it.nextLineByAnnotation();
                 return nextToken();
-            }else
-                throw new Error("Not implemented");
+            }else {
+                System.exit(-1);//throw new  Error("Not implemented");
+                return null;
+            }
         }else {
             return lexOperatorOrUnknown();
         }
@@ -75,7 +77,8 @@ public class Tokenizer {
             if(temp>=0){//不检查越界&&temp<=1844407370955
                 return new Token(TokenType.UINT_LITERAL, temp, pre, it.currentPos());
             }
-            throw new Error("Not implemented");
+            System.exit(-1);//throw new  Error("Not implemented");
+            return null;
         }else {
             peek = it.nextChar();
             //Pos pre=it.previousPos();
@@ -87,13 +90,14 @@ public class Tokenizer {
             if(it.isEOF()||it.peekChar()!='e'||it.peekChar()!='E'){
                 double  temp=Double.parseDouble(str.toString());
                 return new Token(TokenType.DOUBLE_LITERAL, temp, pre, it.currentPos());
-                //throw new Error("Not implemented");
+                //System.exit(-1);//throw new  Error("Not implemented");
             }else{
                 peek = it.nextChar();
                 //Pos pre=it.previousPos();
                 //StringBuilder str=new StringBuilder().append(peek);
                 if(it.isEOF()||!Character.isDigit(it.peekChar())){
-                    throw new Error("Not implemented");
+                    System.exit(-1);//throw new  Error("Not implemented");
+                    return null;
                 }
                 while (!it.isEOF() && (Character.isDigit(it.peekChar()))) {
                     peek=it.nextChar();
@@ -101,7 +105,7 @@ public class Tokenizer {
                 }
                 double  temp=Double.parseDouble(str.toString());//转换未确定可行
                 return new Token(TokenType.DOUBLE_LITERAL, temp, pre, it.currentPos());
-                //throw new Error("Not implemented");
+                //System.exit(-1);//throw new  Error("Not implemented");
             }
         }
         
@@ -127,37 +131,37 @@ public class Tokenizer {
         String str= str_temp.toString();
         if(str.equals("fn")){
             return new Token(TokenType.Fn, str, pre, it.currentPos());
-            //throw new Error("Not implemented");
+            //System.exit(-1);//throw new  Error("Not implemented");
         }else if(str.equals("let")){
             return new Token(TokenType.Let, str, pre, it.currentPos());
-            //throw new Error("Not implemented");
+            //System.exit(-1);//throw new  Error("Not implemented");
         }else if(str.equals("const")){
             return new Token(TokenType.Const, str, pre, it.currentPos());
-            //throw new Error("Not implemented");
+            //System.exit(-1);//throw new  Error("Not implemented");
         }else if(str.equals("as")){
             return new Token(TokenType.As, str, pre, it.currentPos());
-            //throw new Error("Not implemented");
+            //System.exit(-1);//throw new  Error("Not implemented");
         }else if(str.equals("while")){
             return new Token(TokenType.While, str, pre, it.currentPos());
-            //throw new Error("Not implemented");
+            //System.exit(-1);//throw new  Error("Not implemented");
         }else if(str.equals("if")){
             return new Token(TokenType.If, str, pre, it.currentPos());
-            //throw new Error("Not implemented");
+            //System.exit(-1);//throw new  Error("Not implemented");
         }else if(str.equals("else")){
             return new Token(TokenType.Else, str, pre, it.currentPos());
-            //throw new Error("Not implemented");
+            //System.exit(-1);//throw new  Error("Not implemented");
         }else if(str.equals("return")){
             return new Token(TokenType.Return, str, pre, it.currentPos());
-            //throw new Error("Not implemented");
+            //System.exit(-1);//throw new  Error("Not implemented");
         }else if(str.equals("break")){
             return new Token(TokenType.Break, str, pre, it.currentPos());
-            //throw new Error("Not implemented");
+            //System.exit(-1);//throw new  Error("Not implemented");
         }else if(str.equals("continue")){
             return new Token(TokenType.Continue, str, pre, it.currentPos());
-            //throw new Error("Not implemented");
+            //System.exit(-1);//throw new  Error("Not implemented");
         }else{
             return new Token(TokenType.IDENT, str, pre, it.currentPos());
-            //throw new Error("Not implemented");
+            //System.exit(-1);//throw new  Error("Not implemented");
         }
     }
 //操作符
@@ -175,17 +179,17 @@ public class Tokenizer {
                     it.nextChar();
                     return new Token(TokenType.ARROW, '=', pre, it.currentPos());
                 }
-                //throw new Error("Not implemented");
+                //System.exit(-1);//throw new  Error("Not implemented");
 
             case '*':
                 // 填入返回语句
                 return new Token(TokenType.MUL, '*', it.previousPos(), it.currentPos());
-                //throw new Error("Not implemented");
+                //System.exit(-1);//throw new  Error("Not implemented");
 
             case '/':
                 // 填入返回语句
                 return new Token(TokenType.DIV, '/', it.previousPos(), it.currentPos());
-                //throw new Error("Not implemented");
+                //System.exit(-1);//throw new  Error("Not implemented");
 
             case '=':
                 // 填入返回语句
@@ -196,18 +200,18 @@ public class Tokenizer {
                     it.nextChar();
                     return new Token(TokenType.EQ, '=', pre, it.currentPos());
                 }
-                //throw new Error("Not implemented");
+                //System.exit(-1);//throw new  Error("Not implemented");
 
             case '!':
                 // 填入返回语句
                 if(it.peekChar()!='=')
-                    throw new Error("Not implemented");
+                    System.exit(-1);//throw new  Error("Not implemented");
                 else{//==
                     Pos pre=it.previousPos();
                     it.nextChar();
                     return new Token(TokenType.NEQ, '=', pre, it.currentPos());
                 }
-                //throw new Error("Not implemented");
+                //System.exit(-1);//throw new  Error("Not implemented");
 
             case '<':
                 // 填入返回语句
@@ -220,7 +224,7 @@ public class Tokenizer {
                 }
                 // 填入返回语句
 
-            //throw new Error("Not implemented");
+            //System.exit(-1);//throw new  Error("Not implemented");
 
             case '>':
                 // 填入返回语句
@@ -231,52 +235,53 @@ public class Tokenizer {
                     it.nextChar();
                     return new Token(TokenType.GE, '=', pre, it.currentPos());
                 }
-            //throw new Error("Not implemented");
+            //System.exit(-1);//throw new  Error("Not implemented");
 
             case '(':
                 // 填入返回语句
                 return new Token(TokenType.L_PAREN, '(', it.previousPos(), it.currentPos());
-            //throw new Error("Not implemented");
+            //System.exit(-1);//throw new  Error("Not implemented");
 
             case ')':
                 // 填入返回语句
                 return new Token(TokenType.R_PAREN, ')', it.previousPos(), it.currentPos());
-            //throw new Error("Not implemented");
+            //System.exit(-1);//throw new  Error("Not implemented");
 
             case '{':
                 // 填入返回语句
                 return new Token(TokenType.L_BRACE, '{', it.previousPos(), it.currentPos());
-            //throw new Error("Not implemented");
+            //System.exit(-1);//throw new  Error("Not implemented");
 
             case '}':
                 // 填入返回语句
                 return new Token(TokenType.R_BRACE, '}', it.previousPos(), it.currentPos());
-            //throw new Error("Not implemented");
+            //System.exit(-1);//throw new  Error("Not implemented");
 
             case ',':
                 // 填入返回语句
                 return new Token(TokenType.COMMA, ':', it.previousPos(), it.currentPos());
-            //throw new Error("Not implemented");
+            //System.exit(-1);//throw new  Error("Not implemented");
 
             case ':':
                 // 填入返回语句
                 return new Token(TokenType.COLON, ';', it.previousPos(), it.currentPos());
-            //throw new Error("Not implemented");
+            //System.exit(-1);//throw new  Error("Not implemented");
 
             case ';':
                 // 填入返回语句
                 return new Token(TokenType.SEMICOLON, ';', it.previousPos(), it.currentPos());
-                //throw new Error("Not implemented");
+                //System.exit(-1);//throw new  Error("Not implemented");
 
             default:
                 // 不认识这个输入，摸了
-                throw new TokenizeError(ErrorCode.InvalidInput, it.previousPos());
+                System.exit(-1);//throw new  TokenizeError(ErrorCode.InvalidInput, it.previousPos());
+                return null;
         }
     }
     private Token lexString() throws TokenizeError {
         char peek = it.nextChar();
         if(peek=='"'){//空白
-            throw new Error("Not implemented");
+            System.exit(-1);//throw new  Error("Not implemented");
         }
         Pos pre=it.previousPos();
         StringBuilder str_temp=new StringBuilder().append(peek);
@@ -298,7 +303,7 @@ public class Tokenizer {
                 }else if(temp=='\''){
                     str_temp.append('\'');
                 }else{
-                    throw new Error("Not implemented");
+                    System.exit(-1);//throw new  Error("Not implemented");
                 }
             }else {
                 str_temp.append(peek);
@@ -308,12 +313,14 @@ public class Tokenizer {
             peek=it.nextChar();
             return new Token(TokenType.STRING_LITERAL, str_temp.toString(), pre, it.currentPos());
         }
-        throw new Error("Not implemented");
+        System.exit(-1);//throw new  Error("Not implemented");
+        return null;
     }
     private Token lexChar() throws TokenizeError {
-        char peek = it.nextChar(),ans;
+        char peek = it.nextChar();
+        char ans=' ';
         if(peek=='\''){//空白
-            throw new Error("Not implemented");
+            System.exit(-1);//throw new  Error("Not implemented");
         }
         Pos pre=it.previousPos();
         if(peek=='\\'){
@@ -331,7 +338,7 @@ public class Tokenizer {
             }else if(temp=='\''){
                 ans='\'';
             }else{
-                throw new Error("Not implemented");
+                System.exit(-1);//throw new  Error("Not implemented");
             }
         }else {
             ans=peek;
@@ -340,7 +347,8 @@ public class Tokenizer {
             it.nextChar();
             return new Token(TokenType.CHAR_LITERAL, (int)ans, pre, it.currentPos());
         }
-        throw new Error("Not implemented");
+        System.exit(-1);//throw new  Error("Not implemented");
+        return null;
     }
     private void skipSpaceCharacters() {
         while (!it.isEOF() && Character.isWhitespace(it.peekChar())) {

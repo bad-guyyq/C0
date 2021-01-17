@@ -174,7 +174,7 @@ public class Instruction {
         return b;
     }
     public byte[] toO0() {
-        byte op;
+        byte op=0x00;
         byte[] num=null;
         byte[] ans=null;
         switch (this.opt) {
@@ -365,8 +365,10 @@ public class Instruction {
                 num=intToByte4B(this.x);
                 break;
             default:
-                throw new IllegalStateException("Unexpected value: " + this.opt);
+                System.exit(-1);//throw new IllegalStateException("Unexpected value: " + this.opt);
+                break;
         }
+
         if(num==null){
             ans = new byte[1];
             ans[0]=op;

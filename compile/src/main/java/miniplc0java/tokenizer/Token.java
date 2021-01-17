@@ -45,7 +45,8 @@ public class Token {
         if (value instanceof Integer || value instanceof String || value instanceof Character) {
             return value.toString();
         }
-        throw new Error("No suitable cast for token value.");
+        System.exit(-1);//throw new  Error("No suitable cast for token value.");
+        return null;
     }
 
     public TokenType getTokenType() {
