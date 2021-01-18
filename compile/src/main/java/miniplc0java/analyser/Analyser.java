@@ -121,6 +121,12 @@ public final class Analyser {
             nowFunc.setFunction(name,nextParamOffset,0);
         }else{
             nowFunc.setFunction(name,nextParamOffset,1);
+            //由于这里返回值与参数用的是同一个栈，所以参数的offset需要加一；
+            for(SymbolEntry it:now_block_symbolTable.values()){
+                if(it.isParam){
+                    it.stackOffset++;
+                }
+            }
         }
         // 加入符号表
         SymbolEntry func=addSymbol(name, true,false, true,false, nameToken.getStartPos());
