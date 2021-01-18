@@ -74,7 +74,7 @@ public class StringIter {
     }
     public void nextLineByAnnotation(){
         this.peeked = Optional.empty();
-        this.ptr = new Pos(ptr.row + 1, 0);
+        this.ptr = new Pos(ptr.row, linesBuffer.get(ptr.row).length() - 1 );
         if (isEOF()) {
             return ;
         }
@@ -123,6 +123,7 @@ public class StringIter {
             return 0;
         }
         char result = linesBuffer.get(ptrNext.row).charAt(ptrNext.col);
+        ptr=ptrNext;
         ptrNext = nextPos();
         return result;
     }
@@ -141,7 +142,7 @@ public class StringIter {
     }
 
     public Boolean isEOF() {
-        return ptr.row >= linesBuffer.size();
+        return ptrNext.row >= linesBuffer.size();
     }
 
     // Note: Is it evil to unread a buffer?

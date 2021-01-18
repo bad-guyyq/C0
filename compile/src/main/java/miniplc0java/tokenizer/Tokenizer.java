@@ -42,9 +42,9 @@ public class Tokenizer {
             return lexChar();
         }else if (Character.isAlphabetic(peek)||peek=='_') {
             return lexIdentOrKeyword();
-        }else if(peek=='\\'){
+        }else if(peek=='/'){
             it.nextChar();
-            if(it.peekChar()=='\\'){
+            if(it.peekChar()=='/'){
                 it.nextLineByAnnotation();
                 return nextToken();
             }else {

@@ -29,7 +29,9 @@ fn main() -> void {
     putstr("=============\n| #  /\\ + \" |\n|  /:\"\"\'\\\\^||\n|/|\\?\"\'/\\  !|\n|\\r \\ #s    |\n|\\a /\\  /\\\\v|\n=============");
 }
 
-//"/tests/0-basic/ac2-hello-world.o0"
+
+//AAAAAAAAACCCCCCCCCCC
+//"/tests/0-basic/ac2-hello-world.o0" 
 - 多余的 / + 缺少的
 +
 Hello, world!
@@ -645,7 +647,8 @@ fn main() -> void{
 
 1 //
 
-```
+```c
+//AAAAAAAAAAAAACCCCCCCCCCCC
 "/tests/1-comment/ac2.o0"
 - 多余的 / + 缺少的
 +
