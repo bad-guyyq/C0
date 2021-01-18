@@ -402,8 +402,6 @@ public final class Analyser {
     private void stdlib(Token nameToken)throws CompileError{
         String funcName = (String) nameToken.getValue();
         SymbolEntry nameSymbol=foundSymbolByName(funcName);
-        //每次用到的时候都加了;
-        GlobalSymbol.add(funcName);
         //先看全局符号表里有没有加上该标准函数
         if(symbolGlobalTable.get(funcName)==null){//没有则加入全局中
             stdlibFunc.add(add_stdlib(funcName));
@@ -454,10 +452,10 @@ public final class Analyser {
         int funcOff=foundStdlibOffByName(name);
         Function callFunc=stdlibFunc.get(funcOff);
         //设置返回值栈,函数实现不管所以返回值不用管类型；
-        if(callFunc.retSlots!=0){
-            addInstruction(new Instruction(Operation.stackalloc,callFunc.retSlots));
-        }
+        addInstruction(new Instruction(Operation.stackalloc,callFunc.retSlots));
         call_stdlib_list(funcOff);
+        //每次用到的时候都加了;
+        GlobalSymbol.add(name);
         int stdlib=foundGlobalByName(name);
         //标准函数用callname
         addInstruction(new Instruction(Operation.callname,stdlib));
@@ -501,9 +499,7 @@ public final class Analyser {
         int funcOff=foundFuncOffByName(name);
         Function callFunc=Func.get(funcOff);
         //设置返回值栈
-        if(callFunc.retSlots!=0){
-            addInstruction(new Instruction(Operation.stackalloc,callFunc.retSlots));
-        }
+        addInstruction(new Instruction(Operation.stackalloc,callFunc.retSlots));
         if(!nowFunc.fucName.equals("_start")){
             call_param_list(funcOff);
         }
