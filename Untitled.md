@@ -214,3 +214,158 @@ fn [3] 2 0 -> 0 {
 }
 ```
 
+```
+static: 66 69 62 (`fib`)
+
+static: 67 65 74 69 6E 74 (`getint`)
+
+static: 70 75 74 69 6E 74 (`putint`)
+
+static: 70 75 74 69 6E 74 (`putint`)
+
+static: 70 75 74 6C 6E (`putln`)
+
+static: 6D 61 69 6E (`main`)
+
+static: 5F 73 74 61 72 74 (`_start`)
+
+
+fn [6] 0 0 -> 0 {
+    0: StackAlloc(1)
+    1: Call(2)
+    2: PopN(1)
+}
+
+fn [0] 0 1 -> 1 {
+	//if n < 0 
+    0: ArgA(1)
+    1: Load64
+    2: Push(0)
+    3: CmpI
+    4: SetLt
+    5: BrTrue(1)
+    6: Br(5)
+    
+    // return -1;
+    7: ArgA(0)
+    8: Push(1)
+    9: NegI
+   10: Store64
+   11: Ret
+   
+   if n == 0
+   12: ArgA(1)
+   13: Load64
+   14: Push(0)
+   15: CmpI
+   16: Not
+   17: BrTrue(1)
+   18: Br(4)
+   
+   //return 0; 
+   19: ArgA(0)
+   20: Push(0)
+   21: Store64
+   22: Ret
+   
+   //return fib(n-2) + fib(n-1);
+   23: ArgA(1)
+   24: Load64
+   25: Push(1)
+   26: CmpI
+   27: Not
+   28: BrTrue(1)
+   29: Br(4)
+   30: ArgA(0)
+   31: Push(1)
+   32: Store64
+   33: Ret
+   34: ArgA(0)
+   35: StackAlloc(1)
+   36: ArgA(1)
+   37: Load64
+   38: Push(2)
+   39: SubI
+   40: Call(1)
+   41: StackAlloc(1)
+   42: ArgA(1)
+   43: Load64
+   44: Push(1)
+   45: SubI
+   46: Call(1)
+   47: AddI
+   48: Store64
+   49: Ret
+}
+
+fn [5] 2 0 -> 1 {
+    0: LocA(0)
+    1: Push(0)
+    2: Store64
+    3: LocA(1)
+    4: Push(0)
+    5: Store64
+    6: LocA(1)
+    7: StackAlloc(1)
+    8: CallName(1)
+    9: Store64
+   10: LocA(1)
+   11: Load64
+   12: Push(20)
+   13: CmpI
+   14: SetGt
+   15: BrTrue(1)
+   16: Br(4)
+   17: LocA(1)
+   18: Push(21)
+   19: Store64
+   20: Br(17)
+   21: LocA(1)
+   22: Load64
+   23: Push(0)
+   24: CmpI
+   25: SetLt
+   26: BrTrue(1)
+   27: Br(8)
+   28: StackAlloc(0)
+   29: Push(1)
+   30: NegI
+   31: CallName(2)
+   32: ArgA(0)
+   33: Push(0)
+   34: Store64
+   35: Ret
+   36: Br(0)
+   37: Br(0)
+   38: Br(0)
+   39: LocA(0)
+   40: Load64
+   41: LocA(1)
+   42: Load64
+   43: CmpI
+   44: SetGt
+   45: Not
+   46: BrTrue(1)
+   47: Br(15)
+   48: StackAlloc(0)
+   49: StackAlloc(1)
+   50: LocA(0)
+   51: Load64
+   52: Call(1)
+   53: CallName(3)
+   54: StackAlloc(0)
+   55: CallName(4)
+   56: LocA(0)
+   57: LocA(0)
+   58: Load64
+   59: Push(1)
+   60: AddI
+   61: Store64
+   62: Br(-24)
+   63: ArgA(0)
+   64: Push(0)
+   65: Store64
+   66: Ret
+}
+```
+

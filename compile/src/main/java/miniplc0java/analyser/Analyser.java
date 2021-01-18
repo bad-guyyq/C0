@@ -575,7 +575,7 @@ public final class Analyser {
             addInstruction(new Instruction(Operation.not));
         }else if(bool==TokenType.LT){//< 为真时得到-1
             addInstruction(new Instruction(Operation.setlt));//如果 lhs < 0 则推入 1，否则 0
-        }else if(bool==TokenType.NEQ){//> 为真时得到1
+        }else if (bool == TokenType.GT) {//> 为真时得到1
             addInstruction(new Instruction(Operation.setgt));
         }else if(bool==TokenType.LE){//<= 为真时为-1或0，为假时为1
             addInstruction(new Instruction(Operation.setgt));//>0时为1
