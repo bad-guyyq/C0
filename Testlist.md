@@ -42,33 +42,6 @@ fn main() -> void {
 }
 [ 0 ]
 
-//"/tests/0-basic/ac3-1-calc.o0"
-- 多余的 / + 缺少的
-+628
---- stdout ---
-fn add(a: int, b: int) -> int {
-    return a + b;
-}
-
-fn main() -> void {
-    let x: int;
-    let y: int;
-    let z: int;
-    x = getint();
-    y = getint();
-    z = add(x, y);
-    putint(z);
-}
-
-///tests/0-basic/ac3-calc.o0"
---- stdout ---
-fn main() -> void {
-    let x: int = ----1;
-    let y: int = 2;
-    let z: int;
-    z = x + y;
-    putint(z);
-}
 
 ///tests/0-basic/ac4-1-fastpow.o0"
 --- stdout ---
@@ -191,84 +164,6 @@ fn main() -> void {
     }
 }
 
-//"/tests/0-basic/ac7-1-global.o0"
-- 多余的 / + 缺少的
-+
-1
-+
-1
-+
-1
-+
-2
-+
-3
-+
-4
-+
-1
-+
-1
---- stdout ---
-let i: int = 2;
-
-fn foo() -> int {
-    let i: int = 1;
-    putint(i);
-    putln();
-    return i;
-}
-
-fn bar() -> void {
-    putint(i);
-    putln();
-    i = i + 1;
-}
-
-fn main() -> void {
-    let i: int = 1;
-    putint(i);
-    putln();
-    putint(foo());
-    putln();
-    bar();
-    bar();
-    bar();
-    putint(foo());
-    putln();
-}
-
-// "/tests/0-basic/ac7-global.o0"
-- 多余的 / + 缺少的
-+
-114 514
-+
-514 114
---- stdout ---
-let a: int = 0;
-let b: int = 1;
-
-fn swap() -> void {
-    let temp: int = a;
-    a = b;
-    b = temp;
-}
-
-fn main() -> void {
-    a = getint();
-    b = getint();
-    
-    putint(a);
-    putchar(32);
-    putint(b);
-    putln();
-
-    swap();
-    
-    putint(a);
-    putchar(32);
-    putint(b);
-}
 
 ///tests/0-basic/ac8-guess.o0"
 --- stdout ---

@@ -648,7 +648,7 @@ public final class Analyser {
         while (true) {
             // 预读可能是运算符的 token
             Token op = peek();
-            if (op.getTokenType()!= TokenType.MINUS &&op.getTokenType()!= TokenType.DIV){
+            if (op.getTokenType()!= TokenType.MUL &&op.getTokenType()!= TokenType.DIV){
                 break;
             }
             // 运算符
@@ -659,7 +659,7 @@ public final class Analyser {
             if (!leftType.equals(rightType)) {
                 System.exit(-1);//throw new  Error("countTypeWrong");
             }
-            if (op.getTokenType() == TokenType.MINUS) {
+            if (op.getTokenType() == TokenType.MUL) {
                 if(leftType.equals(TokenType.DOUBLE_LITERAL)){
                     addInstruction(new Instruction(Operation.mulf));
                 }else{
