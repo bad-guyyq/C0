@@ -289,7 +289,7 @@ public class Tokenizer {
         while (!it.isEOF() && it.peekChar()!='"'){
             peek=it.nextChar();
             if(peek=='\\'){
-                char temp=it.peekChar();
+                char temp=it.nextChar();
                 if(temp=='\\'){
                     str_temp.append('\\');
                 }else if(temp=='t'){
