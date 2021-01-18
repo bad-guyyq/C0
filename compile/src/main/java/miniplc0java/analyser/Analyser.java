@@ -305,7 +305,7 @@ public final class Analyser {
         addInstruction(new Instruction(Operation.br));//值之后根据之后所有if分析完后改
 
         nowFunc.Body.set(brOff,new Instruction(Operation.br,backOff-brOff));//修改跳出该if
-        if(nextIf(TokenType.Else)!=null){
+        if(!isElse&&nextIf(TokenType.Else)!=null){
             if_stmt();
         }
         //所有都分析完了修改跳出所有修换的值
@@ -556,8 +556,13 @@ public final class Analyser {
     private void bool_expr() throws CompileError{
         //expect(TokenType.L_PAREN);
         TokenType leftType=count_expr(null);
-        Token nameToken=next();
+        Token nameToken=peek();
         TokenType bool=nameToken.getTokenType();
+        if(bool.equals(TokenType.L_BRACE)){
+            return;
+        }else{
+            next();
+        }
         TokenType rightType=count_expr(null);
 
         if(!leftType.equals(rightType)){

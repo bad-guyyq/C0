@@ -48,8 +48,9 @@ public class Tokenizer {
                 it.nextLineByAnnotation();
                 return nextToken();
             }else {
-                System.exit(-1);//throw new  Error("Not implemented");
-                return null;
+                // 填入返回语句
+                return new Token(TokenType.DIV, '/', it.previousPos(), it.currentPos());
+                //System.exit(-1);//throw new  Error("Not implemented");
             }
         }else {
             return lexOperatorOrUnknown();
