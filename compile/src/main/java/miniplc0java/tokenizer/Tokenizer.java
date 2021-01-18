@@ -26,7 +26,7 @@ public class Tokenizer {
 
         // 跳过之前的所有空白字符
         skipSpaceCharacters();
-
+        Token ret=null;
         if (it.isEOF()) {
             return new Token(TokenType.EOF, "", it.currentPos(), it.currentPos());
         }
@@ -36,25 +36,28 @@ public class Tokenizer {
             return lexUint_Double();
         } else if (peek == '"') {
             it.nextChar();
-            return lexString();
+            ret=lexString();
         } else if (peek=='\''){
             it.nextChar();
-            return lexChar();
+            ret=lexChar();
         }else if (Character.isAlphabetic(peek)||peek=='_') {
-            return lexIdentOrKeyword();
+            ret=lexIdentOrKeyword();
         }else if(peek=='/'){
             it.nextChar();
             if(it.peekChar()=='/'){
                 it.nextLineByAnnotation();
-                return nextToken();
+                ret=nextToken();
             }else {
                 // 填入返回语句
-                return new Token(TokenType.DIV, '/', it.previousPos(), it.currentPos());
+                ret= new Token(TokenType.DIV, '/', it.previousPos(), it.currentPos());
                 //System.exit(-1);//throw new  Error("Not implemented");
             }
         }else {
-            return lexOperatorOrUnknown();
+            ret= lexOperatorOrUnknown();
         }
+
+        System.out.print(ret.getValue()+" ");
+        return ret;
     }
 //整数
     private Token lexUint_Double() throws TokenizeError {

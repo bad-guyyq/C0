@@ -558,7 +558,10 @@ public final class Analyser {
      //    LE,        //-> '<='
      //    GE,        //-> '>='*/
     private void bool_expr() throws CompileError{
-        //expect(TokenType.L_PAREN);
+        boolean hasPAREN=false;
+        if(nextIf(TokenType.L_PAREN)!=null){
+            hasPAREN=true;
+        }
         TokenType leftType=count_expr(null);
         Token nameToken=peek();
         TokenType bool=nameToken.getTokenType();
@@ -593,6 +596,9 @@ public final class Analyser {
             addInstruction(new Instruction(Operation.not));//取反
         }else{
             System.exit(-1);//throw new  Error("*/error");
+        }
+        if(hasPAREN){
+            expect(TokenType.R_PAREN);
         }
     }
     //*表达式->项(+/-项)*
@@ -923,7 +929,7 @@ public final class Analyser {
         if (symbol == null) {
             // 没有这个标识符
             System.exit(-1);//throw new  AnalyzeError(ErrorCode.NotDeclared, /* 当前位置 */ nameToken.getStartPos());
-        } else if (!symbol.isInitialized) {
+        } else if (!symbol.isInitialized&&!symbol.isGlobal) {
             // 标识符没初始化
             System.exit(-1);//throw new  AnalyzeError(ErrorCode.NotInitialized, /* 当前位置 */ nameToken.getStartPos());
         }
