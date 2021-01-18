@@ -1,8 +1,4 @@
-fn main() -> int {
-    "bcd";
-    let j: int;
-    j = getint();
-    putint(j);
-    putstr("abc");
-    return 0;
+fn main() -> void {
+    putstr("Hello, world!");
+    putln();
 }

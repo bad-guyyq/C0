@@ -44,11 +44,11 @@ public class Function {
     public void toO0(PrintStream outPrint){
         byte[] tempByte=null;
         for(Instruction it:Body){
-            outPrint.print("    ");
+            //outPrint.print("    ");
             for (byte item : it.toO0()) {
-                outPrint.printf("%02x ",item);
+                outPrint.printf("%02x",item);
             }
-            outPrint.println();
+            //outPrint.println();
         }
         return;
     }

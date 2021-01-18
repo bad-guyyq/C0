@@ -5,7 +5,7 @@
 gradle fatjar
 java -jar build/libs/miniplc0java.jar -t  hello.plc0 -o output_t.txt
 java -jar build/libs/miniplc0java.jar -l  hello.plc0 -o output_l.txt
-
+java -jar build/libs/miniplc0java.jar hello.plc0 -o output_l.txt
 ```
 
 ```

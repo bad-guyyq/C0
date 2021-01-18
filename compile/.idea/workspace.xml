@@ -21,14 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="e648ede6-5c5c-4f02-a08d-ca8a121a738b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello.plc0" beforeDir="false" afterPath="$PROJECT_DIR$/hello.plc0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/miniplc0java/analyser/Analyser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/miniplc0java/analyser/Analyser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/miniplc0java/instruction/Instruction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/miniplc0java/instruction/Instruction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/miniplc0java/tokenizer/StringIter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/miniplc0java/tokenizer/StringIter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/miniplc0java/tokenizer/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/miniplc0java/tokenizer/Token.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/miniplc0java/tokenizer/Tokenizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/miniplc0java/tokenizer/Tokenizer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output_llO0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output_llO0.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/miniplc0java/analyser/Analyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miniplc0java/analyser/Analyser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/miniplc0java/tokenizer/StringIter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miniplc0java/tokenizer/StringIter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miniplc0java/instruction/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miniplc0java/instruction/Function.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../debugstep.md" beforeDir="false" afterPath="$PROJECT_DIR$/../debugstep.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610905715726</updated>
-      <workItem from="1610905716776" duration="11726000" />
+      <workItem from="1610905716776" duration="14266000" />
     </task>
     <servers />
   </component>
@@ -146,22 +146,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="310" height="689" key="GridCell.Tab.-1.right/0.0.1536.824@0.0.1536.824" timestamp="1610910670796" />
-    <state width="880" height="216" key="GridCell.Tab.0.bottom" timestamp="1610921940217">
+    <state width="1167" height="126" key="GridCell.Tab.0.bottom" timestamp="1610942031621">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="880" height="216" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610921940217" />
-    <state width="880" height="216" key="GridCell.Tab.0.center" timestamp="1610921940217">
+    <state width="1167" height="126" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610942031621" />
+    <state width="1167" height="126" key="GridCell.Tab.0.center" timestamp="1610942031620">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="880" height="216" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610921940217" />
-    <state width="880" height="216" key="GridCell.Tab.0.left" timestamp="1610921940217">
+    <state width="1167" height="126" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610942031620" />
+    <state width="1167" height="126" key="GridCell.Tab.0.left" timestamp="1610942031620">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="880" height="216" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610921940217" />
-    <state width="880" height="216" key="GridCell.Tab.0.right" timestamp="1610921940217">
+    <state width="1167" height="126" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610942031620" />
+    <state width="1167" height="126" key="GridCell.Tab.0.right" timestamp="1610942031620">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="880" height="216" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610921940217" />
+    <state width="1167" height="126" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610942031620" />
     <state width="310" height="689" key="GridCell.Tab.1.bottom" timestamp="1610910831042">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -208,7 +208,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$PROJECT_DIR$/build/libs/miniplc0java.jar!/miniplc0java/analyser/Analyser.class</url>
-          <line>648</line>
+          <line>642</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
