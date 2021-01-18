@@ -173,6 +173,10 @@ public class Instruction {
         b[0] = (byte) (n & 0xff);
         return b;
     }
+    public static byte charByte(char ch){
+        byte by = (byte)(ch&0xff);
+        return by;
+    }
     public byte[] toO0() {
         byte op=0x00;
         byte[] num=null;

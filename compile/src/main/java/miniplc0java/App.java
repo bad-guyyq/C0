@@ -1,11 +1,6 @@
 package miniplc0java;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.PrintStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -28,7 +23,7 @@ import net.sourceforge.argparse4j.inf.Namespace;
 
 
 public class App {
-    public static void main(String[] args) throws CompileError {
+    public static void main(String[] args) throws CompileError, FileNotFoundException {
 
         var argparse = buildArgparse();
         Namespace result;
@@ -56,19 +51,25 @@ public class App {
             }
         }
         //设置输出
-        PrintStream output;
-        if (outputFileName.equals("-")) {
-            output = System.out;
-        } else {
-            try {
-                output = new PrintStream(new FileOutputStream(outputFileName));
-            } catch (FileNotFoundException e) {
-                System.err.println("Cannot open output file.");
-                e.printStackTrace();
-                System.exit(2);
-                return;
-            }
+        //设置输出
+        DataOutputStream output;
+        try {
+            output = new DataOutputStream(new FileOutputStream(outputFileName));
+        } catch (FileNotFoundException e) {
+            System.err.println("Cannot open output file.");
+            e.printStackTrace();
+            System.exit(2);
+            return;
         }
+//        PrintStream output;
+//        try {
+//            output = new PrintStream(new FileOutputStream(outputFileName));
+//        } catch (FileNotFoundException e) {
+//            System.err.println("Cannot open output file.");
+//            e.printStackTrace();
+//            System.exit(2);
+//            return;
+//        }
 
         Scanner scanner;
         scanner = new Scanner(input);
@@ -83,8 +84,21 @@ public class App {
             System.exit(0);
             return;
         }
+
         //输出
-        analyzer.toO0(output);
+        try {
+            PrintStream output_fortest=new PrintStream(new FileOutputStream("outfortest.txt"));
+            ArrayList<Byte> byteList = new ArrayList<>();
+            analyzer.toO0(byteList);
+            for(byte by: byteList) {
+                output_fortest.printf("0x%x ", (int)by);
+                output.writeByte((int)by);
+            }
+        } catch (Exception e) {
+            // 遇到错误不输出，直接退出
+            e.printStackTrace();
+            System.exit(-1);
+        }
         //词法分析
 //        if (result.getBoolean("tokenize")) {
 //            // tokenize
@@ -154,4 +168,5 @@ public class App {
         var tokenizer = new Tokenizer(iter);
         return tokenizer;
     }
+
 }

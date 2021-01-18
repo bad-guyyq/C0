@@ -13,6 +13,7 @@ import miniplc0java.tokenizer.TokenType;
 import miniplc0java.tokenizer.Tokenizer;
 import miniplc0java.util.Pos;
 
+import java.io.IOException;
 import java.io.PrintStream;
 import java.lang.reflect.Type;
 import java.util.*;
@@ -1143,15 +1144,21 @@ public final class Analyser {
         }
         return output.toString();
     }
+
     //O0输出
-    public void toO0(PrintStream outPrint){
+    public void toO0(ArrayList<Byte> outPrint){
         //output.println
         ArrayList<Byte> output=new ArrayList<>();
 //        outPrint.printf("%02x %02x %02x %02x\n",0x72,0x30,0x3b,0x3e);
 //        outPrint.printf("%02x %02x %02x %02x\n",0x00,0x00,0x00,0x01);
-        outPrint.printf("%02x%02x%02x%02x",0x72,0x30,0x3b,0x3e);
-        outPrint.printf("%02x%02x%02x%02x",0x00,0x00,0x00,0x01);
-
+        outPrint.add((byte)0x72);
+        outPrint.add((byte)0x30);
+        outPrint.add((byte)0x3b);
+        outPrint.add((byte)0x3e);
+        outPrint.add((byte)0x00);
+        outPrint.add((byte)0x00);
+        outPrint.add((byte)0x00);
+        outPrint.add((byte)0x01);
 //        output.add((byte) 0x72);output.add((byte) 0x30);output.add((byte) 0x3b);output.add((byte) 0x3e);//magic
 //        outPrint.println(output);
 //        output.clear();
@@ -1162,7 +1169,7 @@ public final class Analyser {
         // globals.count
 
         for(byte it:Instruction.intToByte4B(GlobalSymbol.size())){
-            outPrint.printf("%02x",it);
+            outPrint.add(it);
         }
         //outPrint.println();
 
@@ -1170,32 +1177,36 @@ public final class Analyser {
             String global=GlobalSymbol.get(i);
             SymbolEntry globalSymbolByte=symbolGlobalTable.get(global);
             //is_const
-            for(byte it:Instruction.intToByte1B(i)){
-                outPrint.printf("%02x",it);
+            if(globalSymbolByte!=null&&globalSymbolByte.isConstant!=true){
+                for(byte it:Instruction.intToByte1B(1)){
+                    outPrint.add(it);
+                }
+            }else{
+                for(byte it:Instruction.intToByte1B(0)){
+                    outPrint.add(it);
+                }
             }
-            //outPrint.println();
-
             //为字符串
             if(globalSymbolByte==null||globalSymbolByte.isFunction){
                 //value.count
                 for(byte it:Instruction.intToByte4B(global.length())){
-                    outPrint.printf("%02x",it);
+                     outPrint.add(it);
                 }
                 //outPrint.println();
                 //value.items
                 for(int j=0;j<global.length();j++){
-                    outPrint.printf("%c",global.charAt(j));
+                    outPrint.add(Instruction.charByte(global.charAt(j)));
                 }
                 //outPrint.println();
             }else{
                 //value.count
                 for(byte it:Instruction.intToByte4B(8)){
-                    outPrint.printf("%02x",it);
+                     outPrint.add(it);
                 }
                 //outPrint.println();
                 //value.items
                 for(int j=0;j<8;j++){
-                    outPrint.printf("%02x",0x00);
+                     outPrint.add((byte)0x00);
                 }
                 //outPrint.println();
             }
@@ -1203,7 +1214,7 @@ public final class Analyser {
 
         // functions.count
         for(byte it:Instruction.intToByte4B(Func.size())){
-            outPrint.printf("%02x",it);
+             outPrint.add(it);
         }
         //outPrint.println();
 
@@ -1213,29 +1224,31 @@ public final class Analyser {
             funIter=it.next();
             // functions.name ret_slots param_slots loc_slots
             for(byte item:Instruction.intToByte4B(foundGlobalByName(funIter.fucName))){
-                outPrint.printf("%02x",item);
+                 outPrint.add(item);
             }
             //outPrint.println();
             for(byte item:Instruction.intToByte4B(funIter.locSlots)){
-                outPrint.printf("%02x",item);
+                 outPrint.add(item);
             }
             //outPrint.println();
             for(byte item:Instruction.intToByte4B(funIter.paramSlots)){
-                outPrint.printf("%02x",item);
+                 outPrint.add(item);
             }
             //outPrint.println();
             for(byte item:Instruction.intToByte4B(funIter.retSlots)){
-                outPrint.printf("%02x",item);
+                 outPrint.add(item);
             }
             //outPrint.println();
 
             // functions.body.count
             for(byte item:Instruction.intToByte4B(funIter.Body.size())){
-                outPrint.printf("%02x",item);
+                 outPrint.add(item);
             }
             //outPrint.println();
             funIter.toO0(outPrint);
         }
         return;
     }
+
+
 }

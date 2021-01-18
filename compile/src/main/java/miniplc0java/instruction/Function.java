@@ -41,12 +41,12 @@ public class Function {
         }
         return output.toString();
     }
-    public void toO0(PrintStream outPrint){
+    public void toO0(ArrayList<Byte> outPrint){
         byte[] tempByte=null;
         for(Instruction it:Body){
             //outPrint.print("    ");
             for (byte item : it.toO0()) {
-                outPrint.printf("%02x",item);
+                outPrint.add(item);
             }
             //outPrint.println();
         }

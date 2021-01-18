@@ -9,6 +9,8 @@ import net.sourceforge.argparse4j.impl.Arguments;
 import net.sourceforge.argparse4j.inf.ArgumentParser;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 
@@ -28,15 +30,24 @@ public class AnalyserTest {
             return;
         }
         //设置输出
-        PrintStream output;
+        DataOutputStream output;
         try {
-            output = new PrintStream(new FileOutputStream(outputFileName));
+            output = new DataOutputStream(new FileOutputStream(outputFileName));
         } catch (FileNotFoundException e) {
             System.err.println("Cannot open output file.");
             e.printStackTrace();
             System.exit(2);
             return;
         }
+//        PrintStream output;
+//        try {
+//            output = new PrintStream(new FileOutputStream(outputFileName));
+//        } catch (FileNotFoundException e) {
+//            System.err.println("Cannot open output file.");
+//            e.printStackTrace();
+//            System.exit(2);
+//            return;
+//        }
         Scanner scanner;
         scanner = new Scanner(input);
         var iter = new StringIter(scanner);
@@ -51,9 +62,22 @@ public class AnalyserTest {
             System.exit(0);
             return;
         }
+
         //输出每个Instruction的tostring
-        output.println(analyzer.toAnalyserString());
-        analyzer.toO0(output);
+        System.out.print(analyzer.toAnalyserString());
+        try {
+            ArrayList<Byte> byteList = new ArrayList<>();
+            analyzer.toO0(byteList);
+            for(byte by: byteList) {
+                System.out.printf("0x%x ", (int)by);
+                output.writeByte((int)by);
+            }
+        } catch (Exception e) {
+            // 遇到错误不输出，直接退出
+            e.printStackTrace();
+            System.exit(-1);
+        }
+
     }
 
     private static Tokenizer tokenize(StringIter iter) {
