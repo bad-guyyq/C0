@@ -570,7 +570,7 @@ public final class Analyser {
         if(!leftType.equals(rightType)){
             System.exit(-1);//throw new  Error("boolTypeWrong");
         }
-        //if与while都是为真时不跳为真时跳，但是指令的跳转位置需要分析
+        //if与while都是用的brtrue如果非 0 则跳转1 进入，但是指令的跳转位置需要分析
         if(leftType.equals(TokenType.DOUBLE_LITERAL)){
             addInstruction(new Instruction(Operation.cmpf));
         }else{
@@ -578,8 +578,7 @@ public final class Analyser {
         }
         if(bool==TokenType.EQ){ //相等时为0，取反为真
             addInstruction(new Instruction(Operation.not));
-        }else if(bool==TokenType.NEQ){//不相等时不为0，取反为真
-            addInstruction(new Instruction(Operation.not));
+        }else if(bool==TokenType.NEQ){//!= 不相等时不为0，什么都不用做
         }else if(bool==TokenType.LT){//< 为真时得到-1
             addInstruction(new Instruction(Operation.setlt));//如果 lhs < 0 则推入 1，否则 0
         }else if (bool == TokenType.GT) {//> 为真时得到1
@@ -1181,7 +1180,7 @@ public final class Analyser {
         for(byte it:Instruction.intToByte4B(GlobalSymbol.size())){
             outPrint.add(it);
         }
-        System.out.println();
+        //outPrint.println();bool
 
         for(int i=0;i<GlobalSymbol.size();i++){
             String global=GlobalSymbol.get(i);
@@ -1202,24 +1201,24 @@ public final class Analyser {
                 for(byte it:Instruction.intToByte4B(global.length())){
                      outPrint.add(it);
                 }
-                System.out.println();
+                //outPrint.println();
                 //value.items
                 for(int j=0;j<global.length();j++){
                     outPrint.add(Instruction.charByte(global.charAt(j)));
                 }
-                System.out.println();
+                //outPrint.println();
 
             }else{
                 //value.count
                 for(byte it:Instruction.intToByte4B(8)){
                      outPrint.add(it);
                 }
-                System.out.println();
+                //outPrint.println();
                 //value.items
                 for(int j=0;j<8;j++){
                      outPrint.add((byte)0x00);
                 }
-                System.out.println();
+                //outPrint.println();
             }
         }
 
@@ -1227,7 +1226,7 @@ public final class Analyser {
         for(byte it:Instruction.intToByte4B(Func.size())){
              outPrint.add(it);
         }
-        System.out.println();
+        //outPrint.println();
 
         Iterator<Function> it = Func.iterator();
         Function funIter;
@@ -1237,25 +1236,25 @@ public final class Analyser {
             for(byte item:Instruction.intToByte4B(foundGlobalByName(funIter.fucName))){
                  outPrint.add(item);
             }
-            System.out.println();
+            //outPrint.println();
             for(byte item:Instruction.intToByte4B(funIter.retSlots)){
                  outPrint.add(item);
             }
-            System.out.println();
+            //outPrint.println();
             for(byte item:Instruction.intToByte4B(funIter.paramSlots)){
                  outPrint.add(item);
             }
-            System.out.println();
+            //outPrint.println();
             for(byte item:Instruction.intToByte4B(funIter.locSlots)){
                  outPrint.add(item);
             }
-            System.out.println();
+            //outPrint.println();
 
             // functions.body.count
             for(byte item:Instruction.intToByte4B(funIter.Body.size())){
                  outPrint.add(item);
             }
-            System.out.println();
+            //outPrint.println();
             funIter.toO0(outPrint);
         }
         return;

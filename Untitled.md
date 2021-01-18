@@ -215,157 +215,107 @@ fn [3] 2 0 -> 0 {
 ```
 
 ```
-static: 66 69 62 (`fib`)
 
-static: 67 65 74 69 6E 74 (`getint`)
-
-static: 70 75 74 69 6E 74 (`putint`)
-
-static: 70 75 74 69 6E 74 (`putint`)
-
-static: 70 75 74 6C 6E (`putln`)
-
-static: 6D 61 69 6E (`main`)
-
-static: 5F 73 74 61 72 74 (`_start`)
-
-
-fn [6] 0 0 -> 0 {
-    0: StackAlloc(1)
-    1: Call(2)
-    2: PopN(1)
+//我的static: 112 117 116 105 110 116 ('putint')
+static: 112 117 116 105 110 116 ('putint')
+static: 109 97 105 110 ('main')
+static: 95 115 116 97 114 116 ('_start')
+fn [3] 0 0 -> 0 {
+    0: stackalloc 0
+    1: call 1
 }
+fn [2] 0 0 -> 0 {
+    0: push 114514
+    1: brtrue 1
+    2: br 75
+if 114514 { 
 
-fn [0] 0 1 -> 1 {
-	//if n < 0 
-    0: ArgA(1)
-    1: Load64
-    2: Push(0)
-    3: CmpI
-    4: SetLt
-    5: BrTrue(1)
-    6: Br(5)
+    3: push 1919810
+    4: brtrue 1
+    5: br 71
+ if 1919810 {
+ 
+    6: push 1
+    7: push 2
+    8: cmpi
+    9: brtrue 1
+    10: br 65
+  if 1 != 2 {
+  
+    11: push 3
+    12: push 3
+    13: cmpi
+    14: not
+    15: brtrue 1
+    16: br 58
+    17: push 114
+    18: brtrue 1
+    19: br 54
+    20: push 514
+    21: brtrue 1
+    22: br 50
+    23: push 2
+    24: push 1
+    25: negi
+    26: cmpi
+    27: setgt
+    28: brtrue 1
+    29: br 42
+    30: push 1
+    31: push 19
+    32: cmpi
+    33: setlt
+    34: brtrue 1
+    35: br 35
+    36: push 3
+    37: push 3
+    38: cmpi
+    39: setlt
+    40: not
+    41: brtrue 1
+    42: br 27
+    43: push 5
+    44: push 5
+    45: cmpi
+    46: setgt
+    47: not
+    48: brtrue 1
+    49: br 19
+    50: push 0
+    51: brtrue 1
+    52: br 8
+    53: push 1
+    54: brtrue 1
+    55: br 4
+    56: stackalloc 0
+    57: push 1919
+    58: callname 0
+    59: br -7
+    60: br 6
+    61: brtrue 1
+    62: br 4
+    63: stackalloc 0
+    64: push 810
+    65: callname 0
+    66: br 0
+    67: ret
+    68: br -26
+    69: br -34
+    70: br -41
+    71: br -49
+    72: br -53
+    73: br -57
+    74: br 0
+    75: br 0
     
-    // return -1;
-    7: ArgA(0)
-    8: Push(1)
-    9: NegI
-   10: Store64
-   11: Ret
-   
-   if n == 0
-   12: ArgA(1)
-   13: Load64
-   14: Push(0)
-   15: CmpI
-   16: Not
-   17: BrTrue(1)
-   18: Br(4)
-   
-   //return 0; 
-   19: ArgA(0)
-   20: Push(0)
-   21: Store64
-   22: Ret
-   
-   //return fib(n-2) + fib(n-1);
-   23: ArgA(1)
-   24: Load64
-   25: Push(1)
-   26: CmpI
-   27: Not
-   28: BrTrue(1)
-   29: Br(4)
-   30: ArgA(0)
-   31: Push(1)
-   32: Store64
-   33: Ret
-   34: ArgA(0)
-   35: StackAlloc(1)
-   36: ArgA(1)
-   37: Load64
-   38: Push(2)
-   39: SubI
-   40: Call(1)
-   41: StackAlloc(1)
-   42: ArgA(1)
-   43: Load64
-   44: Push(1)
-   45: SubI
-   46: Call(1)
-   47: AddI
-   48: Store64
-   49: Ret
-}
+  }    76: br 0
+    
+ }    77: br 0
+    
+}    78: ret
 
-fn [5] 2 0 -> 1 {
-    0: LocA(0)
-    1: Push(0)
-    2: Store64
-    3: LocA(1)
-    4: Push(0)
-    5: Store64
-    6: LocA(1)
-    7: StackAlloc(1)
-    8: CallName(1)
-    9: Store64
-   10: LocA(1)
-   11: Load64
-   12: Push(20)
-   13: CmpI
-   14: SetGt
-   15: BrTrue(1)
-   16: Br(4)
-   17: LocA(1)
-   18: Push(21)
-   19: Store64
-   20: Br(17)
-   21: LocA(1)
-   22: Load64
-   23: Push(0)
-   24: CmpI
-   25: SetLt
-   26: BrTrue(1)
-   27: Br(8)
-   28: StackAlloc(0)
-   29: Push(1)
-   30: NegI
-   31: CallName(2)
-   32: ArgA(0)
-   33: Push(0)
-   34: Store64
-   35: Ret
-   36: Br(0)
-   37: Br(0)
-   38: Br(0)
-   39: LocA(0)
-   40: Load64
-   41: LocA(1)
-   42: Load64
-   43: CmpI
-   44: SetGt
-   45: Not
-   46: BrTrue(1)
-   47: Br(15)
-   48: StackAlloc(0)
-   49: StackAlloc(1)
-   50: LocA(0)
-   51: Load64
-   52: Call(1)
-   53: CallName(3)
-   54: StackAlloc(0)
-   55: CallName(4)
-   56: LocA(0)
-   57: LocA(0)
-   58: Load64
-   59: Push(1)
-   60: AddI
-   61: Store64
-   62: Br(-24)
-   63: ArgA(0)
-   64: Push(0)
-   65: Store64
-   66: Ret
+
+
 }
 ```
 
