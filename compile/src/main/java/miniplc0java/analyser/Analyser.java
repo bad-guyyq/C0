@@ -293,8 +293,10 @@ public final class Analyser {
         int boolOff=nowFunc.Body.size();//判断开始指令位置
         if(!isElse){//
             bool_expr();
+            addInstruction(new Instruction(Operation.brtrue,1));//满足条件越过下一条无条件跳转指令
+        }else{
+            addInstruction(new Instruction(Operation.br,1));//else无需判断条件
         }
-        addInstruction(new Instruction(Operation.brtrue,1));//满足条件越过下一条无条件跳转指令
         int brOff=nowFunc.Body.size();//跳出该if
         addInstruction(new Instruction(Operation.br));//值之后根据下标改
 
