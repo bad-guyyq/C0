@@ -348,6 +348,7 @@ public final class Analyser {
     }
     private void break_stmt()throws CompileError {
         next();
+        System.exit(-1);
     }
     private void continue_stmt()throws CompileError {
         next();
