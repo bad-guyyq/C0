@@ -679,7 +679,7 @@ public final class Analyser {
     }
     //*因子->符号?(标识符|无符号整数|'(' 表达式 ')')
     private TokenType count_expr_Factor(Token ifNext) throws CompileError{
-        boolean negate= false;
+        int negate= 0;
         TokenType type=null;
         SymbolEntry nameSymbol;
         Token nameToken;
@@ -690,13 +690,14 @@ public final class Analyser {
             nameToken=next();
         }
         //取反
-        if (nameToken.getTokenType()==TokenType.MINUS) {
-            negate = true;
-            next();
+        while (nameToken.getTokenType()==TokenType.MINUS) {
+            negate ++;
+            nameToken=next();
             // 计算结果出来后加上neg指令
-        }else if(nameToken.getTokenType()==TokenType.PLUS){
+        }
+        while(nameToken.getTokenType()==TokenType.PLUS){
             //什么都不做
-            next();
+            nameToken=next();
         }
         // 是标识符,函数或者变量，由于要判断,再加上字符，浮点数与字符串
         // 加载标识符的值,返回标识符符号
@@ -748,12 +749,14 @@ public final class Analyser {
             //System.exit(-1);//throw new  ExpectedTokenError(List.of(TokenType.IDENT, TokenType.UINT_LITERAL, TokenType.L_PAREN), next());
             System.exit(-1);//throw new  Error("List.of(no token)");
         }
-        if (negate) {
+        if (negate>0) {
             if(type.equals(TokenType.DOUBLE_LITERAL)){
-                addInstruction(new Instruction(Operation.negf));
+                while(negate-->0)
+                    addInstruction(new Instruction(Operation.negf));
             }
             else{
-                addInstruction(new Instruction(Operation.negi));
+                while(negate-->0)
+                    addInstruction(new Instruction(Operation.negi));
             }
         }
         return type;
