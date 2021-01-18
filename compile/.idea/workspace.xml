@@ -20,16 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e648ede6-5c5c-4f02-a08d-ca8a121a738b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Testlist.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Testlist.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Untitled.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Untitled.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello.plc0" beforeDir="false" afterPath="$PROJECT_DIR$/hello.plc0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oo" beforeDir="false" afterPath="$PROJECT_DIR$/oo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/miniplc0java/analyser/Analyser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/miniplc0java/analyser/Analyser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outfortest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/outfortest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_llO0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output_llO0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputfottest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/outputfottest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/miniplc0java/analyser/Analyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miniplc0java/analyser/Analyser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miniplc0java/tokenizer/StringIter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miniplc0java/tokenizer/StringIter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../debugstep.md" beforeDir="false" afterPath="$PROJECT_DIR$/../debugstep.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +100,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610905715726</updated>
-      <workItem from="1610905716776" duration="53155000" />
+      <workItem from="1610905716776" duration="53520000" />
     </task>
     <servers />
   </component>
