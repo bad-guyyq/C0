@@ -328,7 +328,7 @@ public class Tokenizer {
         }
         Pos pre=it.previousPos();
         if(peek=='\\'){
-            char temp=it.peekChar();
+            char temp=it.nextChar();
             if(temp=='\\'){
                 ans='\\';
             }else if(temp=='t'){

@@ -23,7 +23,8 @@
       <change beforePath="$PROJECT_DIR$/../Testlist.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Testlist.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Untitled.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Untitled.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/miniplc0java/tokenizer/StringIter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miniplc0java/tokenizer/StringIter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/miniplc0java/tokenizer/Tokenizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/miniplc0java/tokenizer/Tokenizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../debugstep.md" beforeDir="false" afterPath="$PROJECT_DIR$/../debugstep.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610905715726</updated>
-      <workItem from="1610905716776" duration="53520000" />
+      <workItem from="1610905716776" duration="54447000" />
     </task>
     <servers />
   </component>
