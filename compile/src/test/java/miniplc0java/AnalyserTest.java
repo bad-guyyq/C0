@@ -39,15 +39,15 @@ public class AnalyserTest {
             System.exit(2);
             return;
         }
-//        PrintStream output;
-//        try {
-//            output = new PrintStream(new FileOutputStream(outputFileName));
-//        } catch (FileNotFoundException e) {
-//            System.err.println("Cannot open output file.");
-//            e.printStackTrace();
-//            System.exit(2);
-//            return;
-//        }
+        PrintStream outputfottest;
+        try {
+            outputfottest = new PrintStream(new FileOutputStream("outputfottest.txt"));
+        } catch (FileNotFoundException e) {
+            System.err.println("Cannot open output file.");
+            e.printStackTrace();
+            System.exit(2);
+            return;
+        }
         Scanner scanner;
         scanner = new Scanner(input);
         var iter = new StringIter(scanner);
@@ -68,6 +68,7 @@ public class AnalyserTest {
         try {
             ArrayList<Byte> byteList = new ArrayList<>();
             analyzer.toO0(byteList);
+            analyzer.toO0fortest(outputfottest);
             for(byte by: byteList) {
                 System.out.printf("0x%x ", (int)by);
                 output.writeByte((int)by);

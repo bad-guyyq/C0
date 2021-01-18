@@ -52,4 +52,15 @@ public class Function {
         }
         return;
     }
+    public void toO0fortest(PrintStream outPrint){
+        byte[] tempByte=null;
+        for(Instruction it:Body){
+            outPrint.print("    ");
+            for (byte item : it.toO0()) {
+                outPrint.printf("%02x",item);
+            }
+            outPrint.println();
+        }
+        return;
+    }
 }
