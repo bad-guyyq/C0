@@ -352,6 +352,7 @@ public final class Analyser {
     }
     private void continue_stmt()throws CompileError {
         next();
+        System.exit(-1);
     }
 
     /**表达式语句*/
